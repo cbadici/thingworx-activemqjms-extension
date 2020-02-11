@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entities>
+    <ExtensionPackages>
+        <ExtensionPackage dependsOn="" description="" minimumThingWorxVersion="6.6.0" name="ActiveMQJMSExtension" packageVersion="3.0.0" vendor="ThingWorx Labs">
+            <JarResources>
+                <FileResource description="" file="imq-4.2.jar" type="JAR"/>
+                <FileResource description="" file="javax.jms.jar" type="JAR"/>
+                <FileResource description="" file="jms.jar" type="JAR"/>
+                <FileResource description="" file="activemqjmsextension.jar" type="JAR"/>
+                <FileResource description="" file="geronimo-j2ee-management_1.1_spec-1.0.1.jar" type="JAR"/>
+                <FileResource description="" file="hawtbuf-1.11.jar" type="JAR"/>
+                <FileResource description="" file="activemq-client-5.15.2.jar" type="JAR"/>
+            </JarResources>
+        </ExtensionPackage>
+    </ExtensionPackages>
+    <ThingPackages>
+        <ThingPackage aspect.isCreatable="true" aspect.isSystemObject="false" className="mq.ActiveMQ_JMS_Thing" description="" name="ActiveMQ_JMS_Thing">
+            <HandlerDefinitions/>
+        </ThingPackage>
+        <ThingPackage aspect.isCreatable="true" aspect.isSystemObject="false" className="mq.ActiveMQ_JMS_Thing_Listener" description="" name="ActiveMQ_JMS_Thing_Listener">
+            <HandlerDefinitions/>
+        </ThingPackage>
+    </ThingPackages>
+    <ThingTemplates>
+        <ThingTemplate aspect.isSystemObject="false" description="" name="ActiveMQJMSServer" thingPackage="ActiveMQ_JMS_Thing">
+            <avatar/>
+        </ThingTemplate>
+        <ThingTemplate aspect.isSystemObject="false" description="" name="ActiveMQJMSListener" thingPackage="ActiveMQ_JMS_Thing_Listener">
+            <avatar/>
+        </ThingTemplate>
+    </ThingTemplates>
+    <LocalizationTables>
+        <LocalizationTable description="Default localization table" documentationContent="" homeMashup="" languageCommon="English" languageNative="English" lastModifiedDate="2017-11-03T18:18:21.412+02:00" name="Default" projectName="" tags="">
+            <Owner name="SuperUser" type="User"/>
+            <avatar/>
+            <DesignTimePermissions>
+                <Create/>
+                <Read/>
+                <Update/>
+                <Delete/>
+                <Metadata/>
+            </DesignTimePermissions>
+            <RunTimePermissions/>
+            <VisibilityPermissions>
+                <Visibility/>
+            </VisibilityPermissions>
+            <ConfigurationTables>
+                <ConfigurationTable description="Localization tokens and usage" isMultiRow="true" name="LocalizationTokens" ordinal="0">
+                    <DataShape>
+                        <FieldDefinitions>
+                            <FieldDefinition aspect.friendlyName="Translation context" baseType="STRING" description="Translation context" name="context" ordinal="3"/>
+                            <FieldDefinition aspect.friendlyName="Token name" baseType="STRING" description="Token name" name="name" ordinal="0"/>
+                            <FieldDefinition aspect.friendlyName="Token usage" baseType="STRING" description="Token usage" name="usage" ordinal="2"/>
+                            <FieldDefinition aspect.friendlyName="Localized value" baseType="STRING" description="Localized value" name="value" ordinal="1"/>
+                        </FieldDefinitions>
+                    </DataShape>
+                    <Rows>
+                        <Row>
+                            <context/>
+                            <name><![CDATA[MQ Queue name]]></name>
+                            <usage/>
+                            <value><![CDATA[JMS Queue Name]]></value>
+                        </Row>
+                        <Row>
+                            <context/>
+                            <name><![CDATA[MQConnectionInfo]]></name>
+                            <usage/>
+                            <value><![CDATA[JMS MQ Connection Settings]]></value>
+                        </Row>
+                        <Row>
+                            <context/>
+                            <name><![CDATA[MQ broker address and port]]></name>
+                            <usage/>	   
+                            <value><![CDATA[JMS MQ broker address and port]]></value>
+                        </Row>
+                        <Row>
+                            <context/>
+                            <name><![CDATA[MQ User]]></name>
+                            <usage/>
+                            <value><![CDATA[MQ User]]></value>
+                        </Row>
+                        <Row>
+                            <context/>
+                            <name><![CDATA[MQ Password]]></name>
+                            <usage/>
+                            <value><![CDATA[MQ Password]]></value>
+                        </Row>
+                           <Row>
+                            <context/>
+                            <name><![CDATA[Authenticate using User and Password?]]></name>
+                            <usage/>
+                            <value><![CDATA[Authenticate using User and Password?]]></value>
+                        </Row>
+                        
+                           <Row>
+                            <context/>
+                            <name><![CDATA[Connection timeout for the broker, expressed in miliseconds]]></name>
+                            <usage/>
+                            <value><![CDATA[Connection timeout for the broker, expressed in miliseconds]]></value>
+                        </Row>
+                        
+                    </Rows>
+                </ConfigurationTable>
+            </ConfigurationTables>
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2017-11-03T18:18:21.412+02:00" user="SuperUser"/>
+            </ConfigurationChanges>
+        </LocalizationTable>
+    </LocalizationTables>
+</Entities>

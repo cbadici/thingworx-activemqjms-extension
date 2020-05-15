@@ -1,5 +1,5 @@
 # thingworx-activemqjms-extension
-[Unofficial/NotSupported] ThingWorx ActiveMQ Extension to connect through JMS to an ActiveMQ broker. Built on the ThingWorx Extension SDK 6.6.0, not included here
+[Unofficial/NotSupported] ThingWorx ActiveMQ Extension to connect through JMS to an ActiveMQ broker. Built on the ThingWorx Extension SDK 6.6.0, not included here.
 
 This is an Ant Eclipse (Version: 2019-09 R4.13.0) project that uses the ThingWorx Eclipse plugin, available in the PTC Marketplace.
 
@@ -11,4 +11,4 @@ This is an Ant Eclipse (Version: 2019-09 R4.13.0) project that uses the ThingWor
 
 Please open issues and feel free to fork it.
 
-This project is not covered by PTC Technical Support. It was built in order to serve as an example, and it does not contain production-ready code. It comes with no warranty of any kind.
+This Extension is provided as-is and without warranty or support. It is not part of the PTC product suite. Users are free to use, fork and modify them at their own risk. Community contributions are welcomed and can be accepted based on their content.
